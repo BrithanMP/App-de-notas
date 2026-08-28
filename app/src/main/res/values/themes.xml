@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.APPDeNotas" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/rojo</item>
+        <item name="colorPrimaryVariant">@color/rojo</item>
+        <item name="android:statusBarColor">@color/rojo</item>
+    </style>
+
+    <style name="Theme.APPDeNotas" parent="Base.Theme.APPDeNotas" />
+</resources>
