@@ -1,5 +1,6 @@
 package com.my.first.appdenotas
 
+import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
@@ -27,5 +28,17 @@ class NotasDatabaseHelper (context: Context) : SQLiteOpenHelper(
         db?.execSQL(dropTableQUery)
         onCreate(db)
     }
+
+    fun inserNota(nota : Nota){
+        val db = writableDatabase
+        val values = ContentValues().apply {
+            put(COLUMN_TITLE, nota.titulo)
+            put(COLUMN_DESCRIPTION, nota.descripcion)
+        }
+        db.insert(TABLE_NAME, null, values)
+        db.close()
+    }
+
+
 
 }
