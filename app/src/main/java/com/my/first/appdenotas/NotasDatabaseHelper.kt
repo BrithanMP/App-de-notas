@@ -59,5 +59,4 @@ class NotasDatabaseHelper (context: Context) : SQLiteOpenHelper(
     }
 
 
-
 }
