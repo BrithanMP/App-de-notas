@@ -42,7 +42,7 @@ class NotasDatabaseHelper (context: Context) : SQLiteOpenHelper(
     fun getAllNotas() : List<Nota> {
         val listaNotas = mutableListOf<Nota>()
         val db = readableDatabase
-        val querry = "SELECT + FROM $TABLE_NAME"
+        val querry = "SELECT * FROM $TABLE_NAME"
         val cursor = db.rawQuery(querry, null)
 
         while (cursor.moveToNext()) {
