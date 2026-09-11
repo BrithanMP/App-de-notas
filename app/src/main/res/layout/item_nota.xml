@@ -29,13 +29,25 @@
             android:maxLines="3"
             android:textSize="14sp" />
 
+
+        <!--Actualizar -->
         <ImageView
             android:id="@+id/ivActualizar"
             android:layout_alignParentEnd="true"
             android:src="@drawable/ic_editar"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="40dp"
             android:layout_width="25dp"
             android:layout_height="25dp"/>
+
+        <!--Borrar -->
+        <ImageView
+            android:id="@+id/ivEliminar"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_eliminar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
